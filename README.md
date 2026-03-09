@@ -56,6 +56,11 @@ See [Releases](https://github.com/BigMango/FalloutToolsPublish/releases) for the
 4. Browse records in the left tree, view details on the right
 5. Use the search box to jump to a record by FormID, EditorID, or name
 
+## Community
+
+- QQ Group: **861631187**
+- GitHub: [BigMango/FalloutToolsPublish](https://github.com/BigMango/FalloutToolsPublish)
+
 ## License
 
 This tool is provided as-is for personal and community use.

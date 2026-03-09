@@ -56,6 +56,11 @@
 4. 在左侧树形结构中浏览记录，右侧查看详情
 5. 使用搜索框通过 FormID、EditorID 或名称快速跳转
 
+## 交流群
+
+- QQ 群: **861631187**
+- GitHub: [BigMango/FalloutToolsPublish](https://github.com/BigMango/FalloutToolsPublish)
+
 ## 许可
 
 本工具仅供个人及社区使用。
