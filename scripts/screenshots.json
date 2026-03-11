@@ -1,0 +1,149 @@
+{
+  "project": "Fallout76DataTools",
+  "description": "Fallout76 数据工具文档截图定义",
+  "baseUrl": "http://localhost:19876",
+  "outputDir": "../images",
+  "languages": {
+    "zh": "简体中文",
+    "en": "English"
+  },
+  "defaultLanguage": "zh",
+  "screenshots": [
+    {
+      "id": "01-main-window",
+      "description": "主界面概览（初始状态，树折叠）",
+      "doc": "01-概述",
+      "steps": [
+        { "action": "collapse_all" }
+      ],
+      "capture": { "target": "form" }
+    },
+    {
+      "id": "01-layout-annotated",
+      "description": "界面布局标注（菜单栏、工具栏、记录树、详情面板、日志面板）",
+      "doc": "01-概述",
+      "steps": [
+        { "action": "navigate", "formId": "0x0004F46A" }
+      ],
+      "capture": {
+        "target": "form",
+        "annotations": [
+          { "control": "mainMenuStrip", "label": { "zh": "菜单栏", "en": "Menu Bar" }, "color": "Red" },
+          { "control": "formIdTextBox", "label": { "zh": "搜索框", "en": "Search Box" }, "color": "Blue" },
+          { "control": "treeView", "label": { "zh": "记录树", "en": "Record Tree" }, "color": "Green" },
+          { "control": "detailTreeList", "label": { "zh": "详情面板", "en": "Detail Panel" }, "color": "Purple" },
+          { "control": "logTextBox", "label": { "zh": "日志", "en": "Log" }, "color": "Orange" }
+        ]
+      }
+    },
+    {
+      "id": "02-record-loaded",
+      "description": "加载 WEAP 记录后的完整界面",
+      "doc": "02-文件菜单",
+      "steps": [
+        { "action": "navigate", "formId": "0x0004F46A" }
+      ],
+      "capture": { "target": "form" }
+    },
+    {
+      "id": "03-tree-panel",
+      "description": "左侧树形面板（展开 WEAP 类型）",
+      "doc": "03-导航菜单",
+      "steps": [
+        { "action": "select_tree", "signature": "WEAP" },
+        { "action": "wait", "ms": 300 }
+      ],
+      "capture": { "target": "treeView" }
+    },
+    {
+      "id": "03-toolbar-annotated",
+      "description": "工具栏标注（搜索框、各按钮、语言选择）",
+      "doc": "03-导航菜单",
+      "steps": [],
+      "capture": {
+        "target": "form",
+        "annotations": [
+          { "control": "formIdTextBox", "label": { "zh": "搜索框", "en": "Search Box" }, "color": "Red", "showArrow": true },
+          { "control": "queryButton", "label": { "zh": "搜索", "en": "Search" }, "color": "Red", "showArrow": true },
+          { "control": "locateButton", "label": { "zh": "定位到树", "en": "Locate in Tree" }, "color": "Blue", "showArrow": true },
+          { "control": "exportJsonButton", "label": { "zh": "导出JSON", "en": "Export JSON" }, "color": "Green", "showArrow": true },
+          { "control": "exportImageButton", "label": { "zh": "导出截图", "en": "Export Image" }, "color": "Green", "showArrow": true },
+          { "control": "cboLanguage", "label": { "zh": "语言切换", "en": "Language" }, "color": "Purple", "showArrow": true }
+        ]
+      }
+    },
+    {
+      "id": "04-detail-weap",
+      "description": "WEAP 记录详情面板（含 FormID 蓝色链接）",
+      "doc": "08-详情面板与交互",
+      "steps": [
+        { "action": "navigate", "formId": "0x0004F46A" }
+      ],
+      "capture": { "target": "detailTreeList" }
+    },
+    {
+      "id": "04-detail-armo",
+      "description": "ARMO 记录详情面板",
+      "doc": "08-详情面板与交互",
+      "steps": [
+        { "action": "navigate", "formId": "0x0004B2D9" },
+        { "action": "wait", "ms": 500 }
+      ],
+      "capture": { "target": "detailTreeList" }
+    },
+    {
+      "id": "04-detail-npc",
+      "description": "NPC_ 记录详情面板",
+      "doc": "08-详情面板与交互",
+      "steps": [
+        { "action": "navigate", "formId": "0x00000007" },
+        { "action": "wait", "ms": 500 }
+      ],
+      "capture": { "target": "form" }
+    },
+    {
+      "id": "05-log-panel",
+      "description": "日志面板",
+      "doc": "05-视图菜单",
+      "steps": [],
+      "capture": { "target": "logTextBox" }
+    },
+    {
+      "id": "06-full-workspace",
+      "description": "完整工作界面（记录已加载，树展开）",
+      "doc": "01-概述",
+      "steps": [
+        { "action": "navigate", "formId": "0x0004F46A" },
+        { "action": "select_tree", "signature": "WEAP" }
+      ],
+      "capture": { "target": "form" }
+    },
+    {
+      "id": "07-search-box-annotated",
+      "description": "搜索框标注",
+      "doc": "04-记录菜单",
+      "steps": [],
+      "capture": {
+        "target": "form",
+        "annotations": [
+          { "control": "formIdTextBox", "label": { "zh": "输入 FormID / EditorID / 关键字", "en": "Enter FormID / EditorID / Keyword" }, "color": "Red", "showArrow": true }
+        ]
+      }
+    },
+    {
+      "id": "08-detail-annotated",
+      "description": "详情面板交互标注",
+      "doc": "08-详情面板与交互",
+      "steps": [
+        { "action": "navigate", "formId": "0x0004F46A" }
+      ],
+      "capture": {
+        "target": "form",
+        "annotations": [
+          { "control": "detailTreeList", "label": { "zh": "字段/值/Hex 三列", "en": "Field / Value / Hex Columns" }, "color": "Red" },
+          { "control": "detailFilterTextBox", "label": { "zh": "字段过滤 (Ctrl+G)", "en": "Field Filter (Ctrl+G)" }, "color": "Blue", "showArrow": true }
+        ]
+      }
+    }
+  ]
+}
