@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## [1.0.3] - 2026-03-11
+### Added
+- **Help → Documentation** — open online documentation from Help menu (Chinese docs for zh locales, English docs for others)
+- **Startup disclaimer** — Bethesda / ZeniMax copyright notice on splash screen and About dialog
+- **Bilingual documentation** — 9 chapters + FAQ in both Chinese and English, with annotated screenshots
+
+### Improved
+- i18n: `splash.disclaimer` key added to all 13 locale files
+- README: added License & Disclaimer section
+
 ## [1.0.2] - 2026-03-11
 ### Added
 - **Master Dependencies** — recursive ESM master-file dependency tree, color-coded load/exist/missing status (Record → Master Dependencies)

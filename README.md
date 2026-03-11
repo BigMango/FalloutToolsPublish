@@ -50,7 +50,8 @@ A desktop tool for parsing and browsing Fallout 76 ESM (Elder Scrolls Master) fi
 - Move between groups, quick navigation from menu
 
 **Help**
-- `About` — version info and auto-update check
+- `Documentation` — open online documentation (opens Chinese docs for Chinese UI, English docs otherwise)
+- `About` — version info, Bethesda copyright disclaimer, and auto-update check
 
 ### Right-Click Context Menus
 
